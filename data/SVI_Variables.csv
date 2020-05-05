@@ -1,0 +1,49 @@
+Domain,Variables,Names,Description,Parse_Eqs,Statistic,MOE
+Household Composition and Disability,B01001_001,AGE65,Persons aged 65 and older,Single,Value,
+Household Composition and Disability,B09001_001,AGE17,Persons aged 17 and younger,Single,Value,
+Household Composition and Disability,DP02_0071,DISABL,Civilian noninstitutionalized population with a disability,Single,Value,
+Household Composition and Disability,"DP02_0007, DP02_0009",SNGPNT,Single parent household with children under 18,DP02_0007E+DP02_0009E,Value,sqrt(DP02_0007M^2+DP02_0009M^2)
+Socioeconomic,B17001_002,POV,Persons below poverty,Single,Value,
+Socioeconomic,DP03_0005,UNEMP,Civilian unemployment,Single,Value,
+Socioeconomic,B19301_001,PCI,Per capita income,Single,Value,
+Socioeconomic,B06009_002,NOHSDP,Persons with no high school diploma,Single,Value,
+Population and Housing,S0601_C01_001,TOTPOP,Population estimate,Single,Value,
+Population and Housing,DP04_0001,HU,Number of housing units,Single,Value,
+Population and Housing,DP02_0001,HH,Number of households,Single,Value,
+Minority Status and Language,"S0601_C01_001, B01001H_001",MINRTY,"Persons (age 5+) who speak English ""less than well""",S0601_C01_001E-B01001H_001E,Value,sqrt(S0601_C01_001E^2+B01001H_001M^2)
+Minority Status and Language,"B16005_007, B16005_008, B16005_012, B16005_013, B16005_017, B16005_018, B16005_022, B16005_023, B16005_029, B16005_030, B16005_034, B16005_035, B16005_039, B16005_040, B16005_044, B16005_045",LIMENG,"Minority (all persons except white, nonHispanic)",B16005_007E+B16005_008E+B16005_012E+B16005_013E+B16005_017E+B16005_018E+B16005_022E+B16005_023E+B16005_029E+B16005_030E+B16005_034E+B16005_035E+B16005_039E+B16005_040E+B16005_044E+B16005_045E,Value,sqrt(B16005_007M^2+B16005_008M^2+B16005_012M^2+B16005_013M^2+B16005_017M^2+B16005_018M^2+B16005_022M^2+B16005_023M^2+B16005_029M^2+B16005_030M^2+B16005_034M^2+B16005_035M^2+B16005_039M^2+B16005_040M^2+B16005_044M^2+B16005_045M^2)
+Housing and Transportation,"DP04_0012, DP04_0013E",MUNIT,Housing in structures with 10 or more units,DP04_0012E+DP04_0013E,Value,sqrt(DP04_0012M^2+DP04_0013M^2)
+Housing and Transportation,DP04_0014,MOBILE,Mobile homes estimate,Single,Value,
+Housing and Transportation,"DP04_0078, DP04_0079",CROWD,"At household level (occupied housing units), more people than rooms",DP04_0078E+DP04_0079E,Value,sqrt(DP04_0078M^2+DP04_0079M^2)
+Housing and Transportation,DP04_0058,NOVEH,Households with no vehicle available,Single,Value,
+Housing and Transportation,B26001_001,GROUPQ,Persons in institutionalized group quarters,Single,Value,
+Socioeconomic,S0601_C01_049,P_POV,Percentage of persons below poverty,Single,Percentage,
+Socioeconomic,B19301_001,P_PCI,Per capita income,Single,Percentage,
+Socioeconomic,DP03_0009P,P_UNEMP,Unemployment Rate,Single,Percentage,
+Socioeconomic,S0601_C01_033,P_NOHSDP,Percentage of persons with no high school diploma (age 25+),Single,Percentage,
+Household Composition and Disability,S0101_C02_030,P_AGE65,Percentage of persons aged 65 and older,Single,Percentage,
+Household Composition and Disability,,P_AGE17,Percentage of persons aged 17 and younger,(E_AGE17/E_TOTPOP)*100,Percentage,((sqrt(M_AGE17^2-((EP_AGE17/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100
+Household Composition and Disability,DP02_0071P,P_DISABL,Percentage of civilian noninstitutionalized population with a disability,Single,Percentage,((sqrt(M_SNGPNT^2-((EP_SNGPNT/100)^2*M_HH^2)))/E_HH)*100
+Household Composition and Disability,,P_SNGPNT,Percentage of single parent households with children under 18,(E_SNGPNT/E_HH)*100,Percentage,((sqrt(M_MINRTY^2-((EP_MINRTY/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100
+Minority Status and Language,,P_MINRTY,"Percentage minority (all persons except white, non-Hispanic)",(E_MINRTY/E_TOTPOP)*100,Percentage,((sqrt(M_LIMENG^2-((EP_LIMENG/100)^2*B16005_001M^2)))/B16005_001E)*100
+Minority Status and Language,B16005_001,P_LIMENG,"Percentage of persons (age 5+) who speak English ""less than well""",(E_LIMENG/B16005_001E)*100,Percentage,((sqrt(M_MUNIT^2-((EP_MUNIT/100)^2*M_HU^2)))/E_HU)*100
+Housing and Transportation,,P_MUNIT,Percentage of housing in structures with 10 or more units,(E_MUNIT/E_HU)*100,Percentage,((sqrt(M_MUNIT^2- ((EP_MUNIT/100)^2* M_HU^2)))/E_HU)*100
+Housing and Transportation,DP04_0014P,P_MOBILE,Percentage of mobile homes,Single,Percentage,
+Housing and Transportation,DP04_0002,P_CROWD,Percentage of occupied housing units with more people than rooms,(E_CROWD/DP04_0002E)*100,Percentage,((sqrt(M_CROWD^2-((EP_CROWD/100)^2*DP04_0002M^2)))/DP04_0002E)*100
+Housing and Transportation,DP04_0058P,P_NOVEH,Percentage of households with no vehicle available,Single,Percentage,
+Housing and Transportation,,P_GROUPQ,Percentage of persons in institutionalized group quarters,(E_GROUPQ/E_TOTPOP)*100,Percentage,((sqrt(M_GROUPQ^2-((EP_GROUPQ/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100
+Socioeconomic,S0601_C01_049,PL_POV,Percentile Percentage of persons below poverty,,Ranking,
+Socioeconomic,B19301_001,PL_PCI,Percentile per capita income estimate,,Ranking,
+Socioeconomic,DP03_0009P,PL_UNEMP,Percentile Percentage of civilian (age 16+) unemployed,,Ranking,
+Socioeconomic,S0601_C01_033,PL_NOHSDP,Percentile Percentage of persons with no high school diploma (age 25+),,Ranking,
+Household Composition and Disability,S0101_C02_030,PL_AGE65,Percentile percentage of persons aged 65 and older,,Ranking,
+Household Composition and Disability,,PL_AGE17,Percentile percentage of persons aged 17 and younger,,Ranking,
+Household Composition and Disability,DP02_0071P,PL_DISABL,Percentile percentage of civilian noninstitutionalized population with a disability,,Ranking,
+Household Composition and Disability,,PL_SNGPNT,Percentile percentage of single parent households with children under 18,,Ranking,
+Minority Status and Language,,PL_MINRTY,"Percentile percentage minority (all persons except white, non - Hispanic)",,Ranking,
+Minority Status and Language,B16005_001,PL_LIMENG,"Percentile percentage of persons (age 5+) who speak English ""less than well""",,Ranking,
+Housing and Transportation,,PL_MUNIT,Percentile percentage housing in structures with 10 or more units,,Ranking,
+Housing and Transportation,DP04_0014P,PL_MOBILE,Percentile percentage mobile homes,,Ranking,
+Housing and Transportation,DP04_0002,PL_CROWD,Percentile percentage households with more people than rooms,,Ranking,
+Housing and Transportation,DP04_0058P,PL_NOVEH,Percentile percentage households with no vehicle available,,Ranking,
+Housing and Transportation,,PL_GROUPQ,Percentile percentage of persons in institutionalized group quarters,,Ranking,

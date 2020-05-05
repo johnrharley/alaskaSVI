@@ -1,0 +1,51 @@
+Domain,Variables,Names,Description,Parse_Eqs,Statistic,MOE,Different than CDC?
+Household Composition and Disability,"B01001_020, B01001_021, B01001_022, B01001_023, B01001_024, B01001_025, B01001_044, B01001_045, B01001_046, B01001_047, B01001_048, B01001_049",AGE65,Persons aged 65 and older,(B01001_020E + B01001_021E + B01001_022E + B01001_023E + B01001_024E +B01001_025E + B01001_044E + B01001_045E + B01001_046E + B01001_047E + B01001_048E + B01001_049E),Value,sqrt(B01001_020M^2 + B01001_021M^2 + B01001_022M^2 + B01001_023M^2 + B01001_024M^2 +B01001_025M^2 + B01001_044M^2 + B01001_045M^2 + B01001_046M^2 + B01001_047M^2 + B01001_048M^2 + B01001_049M^2),No
+Household Composition and Disability,"B01001_003, B01001_004,  B01001_005, B01001_006, B01001_027, B01001_028, B01001_029, B01001_030",AGE17,Persons aged 17 and younger,(B01001_003E + B01001_004E +  B01001_005E + B01001_006E + B01001_027E + B01001_028E + B01001_029E + B01001_030E),Value,sqrt(B01001_003M^2 + B01001_004M^2 +  B01001_005M^2 + B01001_006M^2 + B01001_027M^2 + B01001_028M^2 + B01001_029M^2 + B01001_030M^2),No
+Household Composition and Disability,"C21007_005,  C21007_008,  C21007_012,  C21007_015,  C21007_020,  C21007_023,  C21007_027,  C21007_030",DISABL,Civilian noninstitutionalized population with a disability,(C21007_005E + C21007_008E + C21007_012E + C21007_015E + C21007_020E + C21007_023E + C21007_027E + C21007_030E),Value,sqrt(C21007_005M^2 + C21007_008M^2 + C21007_012M^2 + C21007_015M^2 + C21007_020M^2 + C21007_023M^2 + C21007_027M^2 + C21007_030M^2),Yes
+Household Composition and Disability,"B23009_013, B23009_018",SNGPNT,Single parent household with children under 18,(B23009_013E+B23009_018E),Value,sqrt(B23009_013M^2+B23009_018M^2),Yes
+Socioeconomic,"C17002_002, C17002_003",POV,Persons below poverty,(C17002_002E+C17002_003E),Value,sqrt(C17002_002M^2+C17002_003M^2),No
+Socioeconomic,B23025_005,UNEMP,Civilian unemployment,Single,Value,,No
+Socioeconomic,B19301_001,PCI,Per capita income,Single,Value,,No
+Socioeconomic,"B15002_003, B15002_004, B15002_005, B15002_006, B15002_007, B15002_008, B15002_009, B15002_010, B15002_020, B15002_021, B15002_022, B15002_023, B15002_024, B15002_025, B15002_026, B15002_027",NOHSDP,Persons with no high school diploma,(B15002_003E+B15002_004E+B15002_005E+B15002_006E+B15002_007E+B15002_008E+B15002_009E+B15002_010E+B15002_020E+B15002_021E+B15002_022E+B15002_023E+B15002_024E+B15002_025E+B15002_026E+B15002_027E),Value,sqrt(B15002_003M^2+B15002_004M^2+B15002_005M^2+B15002_006M^2+B15002_007M^2+B15002_008M^2+B15002_009M^2+B15002_010M^2+B15002_020M^2+B15002_021M^2+B15002_022M^2+B15002_023M^2+B15002_024M^2+B15002_025M^2+B15002_026M^2+B15002_027M^2),No
+Population and Housing,B01003_001,TOTPOP,Population estimate,Single,Value,,No
+Population and Housing,B25001_001,HU,Number of housing units,Single,Value,,No
+Population and Housing,"B11001_007, B11001_002",HH,Number of households,(B11001_007E + B11001_002E),Value,sqrt(B11001_007M^2 + B11001_002M^2),No
+Minority Status and Language,"B03002_001, B03002_003",MINRTY,"Minority (all persons except white, nonHispanic)",(B03002_001E - B03002_003E),Value,sqrt(B03002_001M^2 + B03002_003M^2),No
+Minority Status and Language,"B16004_007, B16004_008, B16004_012, B16004_013, B16004_017, B16004_018, B16004_022, B16004_023, B16004_029, B16004_030, B16004_034, B16004_035, B16004_039, B16004_040, B16004_044, B16004_045, B16004_051, B16004_052, B16004_056, B16004_057, B16004_061, B16004_062, B16004_066, B16004_067",LIMENG,"Persons (age 5+) who speak English ""less than well""",(B16004_007E+ B16004_008E+ B16004_012E+ B16004_013E+ B16004_017E+ B16004_018E+ B16004_022E+ B16004_023E+ B16004_029E+ B16004_030E+ B16004_034E+ B16004_035E+ B16004_039E+ B16004_040E+ B16004_044E+ B16004_045E+ B16004_051E+ B16004_052E+ B16004_056E+ B16004_057E+ B16004_061E+ B16004_062E+ B16004_066E+ B16004_067E),Value,sqrt(B16004_007M^2+ B16004_008M^2+ B16004_012M^2+ B16004_013M^2+ B16004_017M^2+ B16004_018M^2+ B16004_022M^2+ B16004_023M^2+ B16004_029M^2+ B16004_030M^2+ B16004_034M^2+ B16004_035M^2+ B16004_039M^2+ B16004_040M^2+ B16004_044M^2+ B16004_045M^2+ B16004_051M^2+ B16004_052M^2+ B16004_056M^2+ B16004_057M^2+ B16004_061M^2+ B16004_062M^2+ B16004_066M^2+ B16004_067M^2),No
+Housing and Transportation,"B25024_007, B25024_008, B25024_009",MUNIT,Housing in structures with 10 or more units,(B25024_007E + B25024_008E + B25024_009E),Value,sqrt(B25024_007M^2 + B25024_008M^2 + B25024_009M^2),No
+Housing and Transportation,B25024_010,MOBILE,Mobile homes estimate,Single,Value,,No
+Housing and Transportation,"B25014_005, B25014_006, B25014_007, B25014_011, B25014_012, B25014_013",CROWD,"At household level (occupied housing units), more people than rooms",(B25014_005E + B25014_006E + B25014_007E + B25014_011E + B25014_012E + B25014_013E),Value,sqrt(B25014_005M^2 + B25014_006M^2 + B25014_007M^2 + B25014_011M^2 + B25014_012M^2 + B25014_013M^2),No
+Housing and Transportation,"B25044_003, B25044_010",NOVEH,Households with no vehicle available,(B25044_003E + B25044_010E),Value,sqrt(B25044_003M^2+B25044_010M^2),No
+Housing and Transportation,B09019_038,GROUPQ,Persons in institutionalized group quarters,Single,Value,,No
+Socioeconomic,,P_POV,Percentage of persons below poverty,(E_POV/E_TOTPOP)*100,Percentage,((sqrt(M_POV^2+((EP_POV/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100,No
+Socioeconomic,B19301_001,P_PCI,Per capita income,Single,Percentage,,No
+Socioeconomic,"B23025_005, B23025_003",P_UNEMP,Unemployment Rate,(B23025_005E / B23025_003E) * 100,Percentage,((sqrt(M_UNEMP^2+((EP_UNEMP/100)^2*B23025_003M^2)))/B23025_003E)*100,No
+Socioeconomic,B15002_001,P_NOHSDP,Percentage of persons with no high school diploma (age 25+),(E_NOHSDP / B15002_001E) * 100,Percentage,((sqrt(M_NOHSDP^2+((EP_NOHSDP/100)^2*B15002_001M^2)))/B15002_001E)*100,No
+Household Composition and Disability,,P_AGE65,Percentage of persons aged 65 and older,((E_AGE65 / E_TOTPOP) * 100),Percentage,((sqrt(M_AGE65^2+((EP_AGE65/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100,No
+Household Composition and Disability,,P_AGE17,Percentage of persons aged 17 and younger,(E_AGE17/E_TOTPOP)*100,Percentage,((sqrt(M_AGE17^2+((EP_AGE17/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100,No
+Household Composition and Disability,C21007_001,P_DISABL,Percentage of civilian noninstitutionalized population with a disability,((E_DISABL)/C21007_001E)*100,Percentage,((sqrt(M_DISABL^2+((EP_DISABL/100)^2*C21007_001M^2)))/C21007_001E)*100,Yes
+Household Composition and Disability,,P_SNGPNT,Percentage of single parent households with children under 18,(E_SNGPNT/E_HH)*100,Percentage,((sqrt(M_SNGPNT^2-((EP_SNGPNT/100)^2*M_HH^2)))/E_HH)*100,Yes
+Minority Status and Language,,P_MINRTY,"Percentage minority (all persons except white, non-Hispanic)",(E_MINRTY/E_TOTPOP)*100,Percentage,"((sqrt(M_MINRTY^2-((EP_MINRTY/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100
+",No
+Minority Status and Language,"B01001_001, B01001_003, B01001_027",P_LIMENG,"Percentage of persons (age 5+) who speak English ""less than well""",(E_LIMENG/(B01001_001E - (B01001_003E + B01001_027E)))*100,Percentage,((sqrt(M_LIMENG^2-((EP_LIMENG/100)^2*(B01001_001M^2 + B01001_003M^2 + B01001_027M^2)))/(B01001_001E-(B01001_003E + B01001_027E)))*100),No
+Housing and Transportation,,P_MUNIT,Percentage of housing in structures with 10 or more units,(E_MUNIT/E_HU)*100,Percentage,((sqrt(M_MUNIT^2-((EP_MUNIT/100)^2*M_HU^2)))/E_HU)*100,No
+Housing and Transportation,"B25024_010, B25001_001",P_MOBILE,Percentage of mobile homes,(B25024_010E / B25001_001E) * 100,Percentage,"((sqrt((B25024_010M^2+(((B25024_010E/100)^2*B25001_001M^2)))/B25001_001E))*100)
+",No
+Housing and Transportation,B25014_001,P_CROWD,Percentage of occupied housing units with more people than rooms,(E_CROWD/B25014_001E)*100,Percentage,((sqrt(M_CROWD^2+((EP_CROWD/100)^2*B25014_001M^2)))/B25014_001E)*100,No
+Housing and Transportation,,P_NOVEH,Percentage of households with no vehicle available,(E_NOVEH / E_HH) * 100,Percentage,((sqrt(M_NOVEH^2+((EP_NOVEH/100)^2*M_HH^2)))/E_HH)*100,No
+Housing and Transportation,,P_GROUPQ,Percentage of persons in institutionalized group quarters,(E_GROUPQ/E_TOTPOP)*100,Percentage,((sqrt(M_GROUPQ^2+((EP_GROUPQ/100)^2*M_TOTPOP^2)))/E_TOTPOP)*100,No
+Socioeconomic,S0601_C01_049,PL_POV,Percentile Percentage of persons below poverty,,Ranking,,
+Socioeconomic,B19301_001,PL_PCI,Percentile per capita income estimate,,Ranking,,
+Socioeconomic,DP03_0009P,PL_UNEMP,Percentile Percentage of civilian (age 16+) unemployed,,Ranking,,
+Socioeconomic,S0601_C01_033,PL_NOHSDP,Percentile Percentage of persons with no high school diploma (age 25+),,Ranking,,
+Household Composition and Disability,S0101_C02_030,PL_AGE65,Percentile percentage of persons aged 65 and older,,Ranking,,
+Household Composition and Disability,,PL_AGE17,Percentile percentage of persons aged 17 and younger,,Ranking,,
+Household Composition and Disability,DP02_0071P,PL_DISABL,Percentile percentage of civilian noninstitutionalized population with a disability,,Ranking,,
+Household Composition and Disability,,PL_SNGPNT,Percentile percentage of single parent households with children under 18,,Ranking,,
+Minority Status and Language,,PL_MINRTY,"Percentile percentage minority (all persons except white, non - Hispanic)",,Ranking,,
+Minority Status and Language,B16005_001,PL_LIMENG,"Percentile percentage of persons (age 5+) who speak English ""less than well""",,Ranking,,
+Housing and Transportation,,PL_MUNIT,Percentile percentage housing in structures with 10 or more units,,Ranking,,
+Housing and Transportation,DP04_0014P,PL_MOBILE,Percentile percentage mobile homes,,Ranking,,
+Housing and Transportation,DP04_0002,PL_CROWD,Percentile percentage households with more people than rooms,,Ranking,,
+Housing and Transportation,DP04_0058P,PL_NOVEH,Percentile percentage households with no vehicle available,,Ranking,,
+Housing and Transportation,,PL_GROUPQ,Percentile percentage of persons in institutionalized group quarters,,Ranking,,
