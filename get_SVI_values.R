@@ -9,7 +9,6 @@ get_SVI_values <- function(SVI, geography, state) {
     filter(Statistic == "Value") -> single_variables
   
   acs_data <- get_acs(geography = geography, state=state, variables = single_variables$Variables, output="wide") 
-  
   # extract metadata for naming variables to be consistent with CDC SVI
   SVI %>%
     filter(Statistic == "Value") %>%

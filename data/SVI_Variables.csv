@@ -1,5 +1,5 @@
 Domain,Variables,Names,Description,Parse_Eqs,Statistic,MOE
-Household Composition and Disability,B01001_001,AGE65,Persons aged 65 and older,Single,Value,
+Household Composition and Disability,S0101_C01_030,AGE65,Persons aged 65 and older,Single,Value,
 Household Composition and Disability,B09001_001,AGE17,Persons aged 17 and younger,Single,Value,
 Household Composition and Disability,DP02_0071,DISABL,Civilian noninstitutionalized population with a disability,Single,Value,
 Household Composition and Disability,"DP02_0007, DP02_0009",SNGPNT,Single parent household with children under 18,DP02_0007E+DP02_0009E,Value,sqrt(DP02_0007M^2+DP02_0009M^2)
