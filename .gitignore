@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 /AirTravel/
+covid.Renviron
+.RDataTmp
+README.Rmd
