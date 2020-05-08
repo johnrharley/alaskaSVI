@@ -77,7 +77,7 @@ particular variable is called “E\_AGE6”.
 More complex calculations occur, such as the number of minority persons
 which is:
 
-\(\hat{E_{Minority}} = \hat{E_{Total population}} - \hat{E_{White, Non-Hispanic}}\)
+\(Minority = Total population - White, Non-Hispanic\)
 
 All of these calculations are well documented and are reproduced in the
 .csv file in the data folder called
@@ -5078,6 +5078,8 @@ ggplot(mergedData, aes(x=E_DISABL, y=BlockCalculatedE_DISABL)) +
   geom_abline(slope=1, linetype="dashed", color="red") +
   theme_minimal() 
 ```
+
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ## Block Group Data
 
