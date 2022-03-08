@@ -30,7 +30,7 @@ geographies, a hierarchy of which for the ACS is shown here (from
 **ACS Geographies**
 
 ![ACS
-Geogrpahies](https://www.census.gov/content/census/en/programs-surveys/acs/geography-acs/concepts-definitions/jcr:content/par/expandablelist/section_1/image.uscbimg.576.medium.png/1550277755896.png)
+Geogrpahies](https://mcdc.missouri.edu/geography/sumlevs/censusgeochart.png)
 
 </center>
 
@@ -51,7 +51,7 @@ domains (figure from ESRI).
 
 **SVI Variables**
 
-![SVI](https://maps.esri.com/jg/HeatVulnerability/images/cdc_sovi_chart.png)
+![SVI](https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/pdf/CDC-SVI-Variables.jpg?_=81002)
 
 </center>
 
